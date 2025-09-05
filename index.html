@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.svg" alt="EFFICODEX logo" class="logo">
+            <span><h1>Alexandra Fernandez</h1></span>
+        </div>
+
+        <button id="hamburgerBtn"></button>
+            
+        <nav id="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
     
+        <section>
+            <h3>About Me</h3>
+            <p>Texto de presentación...</p>
+        </section>
+    
+        <section>
+            <h3>Student Photo</h3>
+            <div class="student-photo">Foto</div>
+        </section>
+    
+        <section>
+            <h3>Web Certificate Courses</h3>
+            <div class="courses">
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+                <div class="course-list">
+                    <div>WDD 130</div>
+                    <div>WDD 131</div>
+                    <div>WDD 231</div>
+                </div>
+                <p>The total credits for courses listed above is 6</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer> 
+    <script src="scripts/navigation.js" defer></script> 
 </body>
 </html>

@@ -1,0 +1,176 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+/* ---------------- HEADER ---------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    width: 30px;
+    height: auto;
+}
+
+.logo-container h1 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Btn hamburguer */
+
+#hamburgerBtn {
+    font-size: 1.5rem;
+    padding: 5px 9px 6px;
+    color: black;
+    position: absolute;
+    right: 0.5rem;
+}
+
+#hamburgerBtn::before {
+    content: "☰"
+}
+
+#hamburgerBtn.open::before {
+    content: "X";
+}
+
+/* NAV */
+nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: #222;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    border-bottom: 1px solid #333;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #444;
+}
+
+nav.open {
+    display: block;
+}
+
+
+/* ---------------- MAIN ---------------- */
+main {
+    padding: 1rem;
+}
+
+h2 {
+    margin-top: 1rem;
+}
+
+/* Secciones tipo "widget" */
+section {
+    margin: 1rem 0;
+    background: #e6e6e6;
+    border: 1px solid #ccc;
+}
+
+section h3 {
+    margin: 0;
+    padding: 0.5rem;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+}
+
+section p {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+}
+
+/* Foto de estudiante */
+.student-photo {
+    width: 100%;
+    height: 200px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cursos */
+.courses {
+    padding: 1rem;
+}
+
+.courses button {
+    margin: 0.2rem;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+}
+
+.courses button:hover {
+    background: #bbb;
+}
+
+.course-list {
+    margin-top: 0.5rem;
+}
+
+.course-list div {
+    background: #aaa;
+    color: #fff;
+    padding: 0.5rem;
+    margin: 0.2rem 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    font-size: 0.8rem;
+}
+
+footer .social {
+    margin: 0.5rem 0;
+}
+
+footer .social img {
+    width: 25px;
+    margin: 0 0.5rem;
+}
