@@ -218,7 +218,7 @@ footer {
     background: #2E2E2E;
     border-top: 1px solid #ccc;
     font-size: 1rem;
-    color: white; #
+    color: white; 
 }
 
 footer .social {
@@ -228,5 +228,5 @@ footer .social {
 footer .social img {
     width: 30px;
     height: 30px;
-    margin: 0.5 1rem;
+    margin: 1rem;
 }
