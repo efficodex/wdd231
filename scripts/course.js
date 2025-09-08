@@ -78,6 +78,13 @@ const courses = [
     }
 ]
 
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('allBtn').addEventListener('click', () => filterCourses('ALL'));
+  document.getElementById('wddBtn').addEventListener('click', () => filterCourses('WDD'));
+  document.getElementById('cseBtn').addEventListener('click', () => filterCourses('CSE'));
+});
+
 let currentFilter = 'ALL';
 
     function renderCourses() {
