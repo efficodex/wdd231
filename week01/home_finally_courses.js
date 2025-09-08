@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: true
+        completed: false
     },
     {
         subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: true
+        completed: false
     },
     {
         subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: true
+        completed: false
     },
     {
         subject: 'CSE',
@@ -60,7 +60,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: true
+        completed: false
     },
     {
         subject: 'WDD',
@@ -74,7 +74,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: true
+        completed: false
     }
 ]
 
@@ -95,15 +95,20 @@ let currentFilter = 'ALL';
         totalCredits += course.credits;
 
         const card = document.createElement('div');
-        card.className = `card ${course.completed ? 'completed' : 'pending'}`;
+        card.className = 'card ' + (course.completed ? 'completed' : '');
 
         card.innerHTML = `
-            <h3 class="status ${course.completed ? 'completed' : 'pending'}">
-            ${course.subject} ${course.number}
-            </h3>
+          <h3>${course.subject} ${course.number}: ${course.title}</h3>
+          <p><em>${course.certificate}</em></p>
+          <p>${course.description}</p>
+          <div>${course.technology.map(tech => `<span class='tag'>${tech}</span>`).join('')}</div>
+          <p><strong>Créditos:</strong> ${course.credits}</p>
+          <p class="status ${course.completed ? 'completed' : 'pending'}">
+            ${course.completed ? 'Completado ✅' : 'Pendiente ⏳'}
+          </p>
         `;
         container.appendChild(card);
-        });
+      });
 
       document.getElementById('creditsTotal').textContent = `Créditos Totales: ${totalCredits}`;
     }

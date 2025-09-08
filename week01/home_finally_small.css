@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #17526d;
+    background: #9B5DE5;
     padding: 0.5rem 1rem;
     border-bottom: 1px solid #ccc;
     position: relative;
@@ -48,7 +48,7 @@ header {
     position: absolute;
     right: 0.5rem;
     border: 5px;
-    background-color: #17526d;
+    background-color: #9B5DE5;
 }
 
 #hamburgerBtn::before {
@@ -155,7 +155,7 @@ section p {
  }
 
  button {
-     background: #17526d;
+     background: #3FA7D6;
      color: white;
      border: none;
      padding: 10px 20px;
@@ -165,7 +165,7 @@ section p {
  }
 
  button:hover {
-     background: #17526d;
+     background: #2e8cb8;
  }
 
  .grid {
@@ -183,13 +183,25 @@ section p {
      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
  }
 
-
+ .card.completed {
+     border-color: #38a169;
+     background: #f0fff4;
+ }
 
  .card h3 {
      color: #9B5DE5;
-     text-align: center;
  }
 
+ .tag {
+     display: inline-block;
+     background: #3FA7D6;
+     color: white;
+     padding: 4px 10px;
+     border-radius: 20px;
+     font-size: 0.8rem;
+     margin-right: 5px;
+     margin-bottom: 5px;
+ }
 
  .status {
      font-weight: bold;
@@ -197,11 +209,11 @@ section p {
  }
 
  .status.completed {
-     color: #17526d;
+     color: #38a169;
  }
 
  .status.pending {
-     color: #650808;
+     color: #e53e3e;
  }
 
  .credits-total {
