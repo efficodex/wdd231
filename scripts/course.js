@@ -105,7 +105,7 @@ let currentFilter = 'ALL';
         container.appendChild(card);
         });
 
-      document.getElementById('creditsTotal').textContent = `Créditos Totales: ${totalCredits}`;
+      document.getElementById('creditsTotal').textContent = `Credits: ${totalCredits}`;
     }
 
     function filterCourses(type) {

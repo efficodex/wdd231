@@ -1,7 +1,7 @@
 /* Reset básico */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     background: #F7F7F7;
     color: #2E2E2E;
 }
@@ -119,8 +119,8 @@ section {
 section h2 {
     margin: 0;
     padding: 0.5rem;
-    background: #FEE440;
-    color: #2E2E2E;
+    background: #6A4C93;
+    color: #F3E9FF;
     font-size: 1rem;
 }
 
