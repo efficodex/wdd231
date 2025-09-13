@@ -34,6 +34,8 @@ const displayProphets = (prophets) => {
 
     // Append the section(card) with the created elements
     card.appendChild(fullName); // append the h2 element to the section(card)
+    card.appendChild(birthdate); // append the p element to the section(card)
+    card.appendChild(birthplace); // append the p element to the section(card)
     card.appendChild(portrait);
 
     cards.appendChild(card);
