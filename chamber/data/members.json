@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Andes Coffee Co.",
+    "address": "123 Coffee St, Lima",
+    "phone": "(01) 456-7890",
+    "website": "https://andescoffee.com",
+    "image": "coffee.png",
+    "membership": 3,
+    "description": "Premium coffee supplier with organic certification."
+  },
+  {
+    "name": "Tech Innovators",
+    "address": "456 Silicon Ave, Lima",
+    "phone": "(01) 987-6543",
+    "website": "https://techinnovators.pe",
+    "image": "tech.png",
+    "membership": 2,
+    "description": "IT services and digital transformation consulting."
+  },
+  {
+    "name": "Lima Logistics",
+    "address": "789 Port Blvd, Lima",
+    "phone": "(01) 222-3333",
+    "website": "https://limalogistics.com",
+    "image": "logistics.png",
+    "membership": 1,
+    "description": "Reliable shipping and warehousing solutions."
+  },
+  {
+    "name": "Pacific Travel Agency",
+    "address": "12 Ocean Dr, Lima",
+    "phone": "(01) 111-2222",
+    "website": "https://pacifictravel.pe",
+    "image": "travel.png",
+    "membership": 2,
+    "description": "Travel packages and business trip planning."
+  },
+  {
+    "name": "Andean Textiles",
+    "address": "99 Artisan Ln, Lima",
+    "phone": "(01) 444-5555",
+    "website": "https://andeantextiles.pe",
+    "image": "textiles.png",
+    "membership": 3,
+    "description": "Handmade textiles and export-quality fabrics."
+  },
+  {
+    "name": "Green Future Energy",
+    "address": "21 Solar Way, Lima",
+    "phone": "(01) 777-8888",
+    "website": "https://greenfuture.pe",
+    "image": "energy.png",
+    "membership": 3,
+    "description": "Sustainable energy and solar panel installations."
+  },
+  {
+    "name": "City Fitness Club",
+    "address": "5 Healthy St, Lima",
+    "phone": "(01) 666-7777",
+    "website": "https://cityfitness.pe",
+    "image": "fitness.png",
+    "membership": 1,
+    "description": "Modern gym with personal training services."
+  }
+]
