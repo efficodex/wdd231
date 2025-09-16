@@ -3,14 +3,16 @@ async function fetchMembers() {
     const response = await fetch("data/members.json");
     if (!response.ok) throw new Error("Failed to fetch members");
     const members = await response.json();
-    displayMembers(members);
+    displayGrid(members); // por defecto grid
   } catch (error) {
     console.error("Error loading members:", error);
   }
 }
 
-function displayMembers(members) {
+// 🔳 Vista GRID (cards)
+function displayGrid(members) {
   const container = document.getElementById("members");
+  container.className = "grid"; // aplicar estilo grid
   container.innerHTML = "";
 
   members.forEach(member => {
@@ -22,8 +24,6 @@ function displayMembers(members) {
       <h2>${member.name}</h2>
       <p>${member.address}</p>
       <p>📞 ${member.phone}</p>
-      <p>Membership: ${membershipLevel(member.membership)}</p>
-      <p>${member.description}</p>
       <a href="${member.website}" target="_blank">Visit Website</a>
     `;
 
@@ -31,25 +31,54 @@ function displayMembers(members) {
   });
 }
 
-function membershipLevel(level) {
-  switch(level) {
-    case 3: return "🥇 Gold";
-    case 2: return "🥈 Silver";
-    case 1: return "👥 Member";
-    default: return "Member";
-  }
+// 📋 Vista LIST (tabla con zebra)
+function displayList(members) {
+  const container = document.getElementById("members");
+  container.className = "list"; // aplicar estilo list
+
+  let html = `
+    <table class="list-view">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Phone</th>
+          <th>Website</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  members.forEach((member, index) => {
+    html += `
+      <tr class="${index % 2 === 0 ? "even" : "odd"}">
+        <td>${member.name}</td>
+        <td>${member.address}</td>
+        <td>${member.phone}</td>
+        <td><a href="${member.website}" target="_blank">${member.website}</a></td>
+        
+      </tr>
+    `;
+  });
+
+  html += `</tbody></table>`;
+  container.innerHTML = html;
 }
 
+
+
 // 🔲 Toggle views
-document.getElementById("gridBtn").addEventListener("click", () => {
-  document.getElementById("members").classList.add("grid");
-  document.getElementById("members").classList.remove("list");
+document.getElementById("gridBtn").addEventListener("click", async () => {
+  const response = await fetch("data/members.json");
+  const members = await response.json();
+  displayGrid(members);
 });
 
-document.getElementById("listBtn").addEventListener("click", () => {
-  document.getElementById("members").classList.add("list");
-  document.getElementById("members").classList.remove("grid");
+document.getElementById("listBtn").addEventListener("click", async () => {
+  const response = await fetch("data/members.json");
+  const members = await response.json();
+  displayList(members);
 });
 
-// Load members
+// 🚀 Load members
 fetchMembers();

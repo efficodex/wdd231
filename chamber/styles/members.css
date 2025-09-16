@@ -15,10 +15,11 @@
 .member-card {
     border: 1px solid #ccc;
     padding: 1rem;
-    background: #f9f9f9;
+    background-color: var(--background);
     border-radius: 8px;
     text-align: center;
     transition: 0.3s;
+    color: var(--text);
 }
 
 .member-card img {
@@ -34,10 +35,39 @@
 .member-card a {
     display: block;
     margin-top: 0.5rem;
-    color: #0066cc;
+    color: black;
     text-decoration: none;
 }
 
 .member-card a:hover {
     text-decoration: underline;
+}
+
+.list-view {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.list-view th,
+.list-view td {
+    padding: 10px;
+    border: 1px solid #231f1f;
+    text-align: left;
+}
+
+.list-view th {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.list-view tr.even {
+    background-color: var(--even);
+}
+
+.list-view tr.odd {
+    background-color: var(--odd);
+}
+
+a:-webkit-any-link {
+    color: var(--text);
 }

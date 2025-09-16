@@ -7,6 +7,8 @@
     --button: #B02B2B;
     --button-hover: #8C1F1F;
     --button-text: #FFFFFF;
+    --even: #d1d1d1;
+    --odd: #ffffff;
 }
 
 
@@ -18,6 +20,8 @@ body.dark {
     --button: #B02B2B;
     --button-hover: #8C1F1F;
     --button-text: #FFFFFF;
+    --even: #212c3b;
+    --odd: #0B141D;
 }
 
 body {
