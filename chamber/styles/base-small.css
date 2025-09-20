@@ -4,8 +4,8 @@
     --text: #1C2A38;
     --header: #0D1B2A;
     --secondary: #E6E6E6;
-    --button: #B02B2B;
-    --button-hover: #8C1F1F;
+    --button: #7a1a1a;
+    --button-hover: #491010;
     --button-text: #FFFFFF;
     --even: #d1d1d1;
     --odd: #ffffff;
@@ -17,8 +17,8 @@ body.dark {
     --text: #FFFFFF;
     --header: #0D1B2A;
     --secondary: #1A2532;
-    --button: #B02B2B;
-    --button-hover: #8C1F1F;
+    --button: #7a1a1a;
+    --button-hover: #491010;
     --button-text: #FFFFFF;
     --even: #212c3b;
     --odd: #0B141D;
