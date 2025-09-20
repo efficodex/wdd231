@@ -1,0 +1,30 @@
+@media (min-width: 650px) {
+    .header-buttons {
+            display: flex;
+            gap: 0.5rem;
+            align-items: right;
+        }
+    
+    #menu_btn {
+        display: none;
+    }
+    
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        background-color: var(--secondary);
+    }
+
+    nav a {
+        border: none;
+        padding: 0.5rem 1rem;
+        background-color: var(--secondary);
+    }
+
+    nav a:hover {
+        background-color: var(--button);
+        border-radius: 6px;
+    }
+}

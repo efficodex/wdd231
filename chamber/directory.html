@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base-small.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/members.css">
 </head>
 
@@ -26,18 +27,23 @@
             <img src="images/logo-chamber-lima.jpg" alt="Stylized letters C and L in blue and red, representing Chamber Lima, with a clean white background and a calm professional tone.">
             The Chamber of Commerce Lima
         </div>
+        
+
+        
+
         <div class="header-buttons">
+            <nav id="menu">
+                <a href="#">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="#">Join</a>
+            </nav>
+
             <button class="toggle">🌙</button>
             <button class="menu" id="menu_btn"></button>
         </div>
     </header>
 
-    <!-- Navigation -->
-    <nav id="menu">
-        <a href="#">Home</a>
-        <a href="directory.html">Directory</a>
-        <a href="#">Join</a>
-    </nav>
+   
 
     <!-- Main Content -->
     <main>
@@ -46,11 +52,10 @@
             <button id="gridBtn">🔲 Grid</button>
             <button id="listBtn">📋 List</button>
         </div>
-        <!-- Section for dynamically loaded chamber member cards; content is populated by members.js -->
-        <section id="members" class="grid"></section>
+        
+        <div id="members" class="grid"></div>
     </main>
-        </section>
-    </main>
+        
 
     <!-- Footer -->
     <footer>
