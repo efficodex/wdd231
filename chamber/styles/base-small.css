@@ -56,12 +56,13 @@ header {
 button.toggle,
 button.menu {
     background-color: var(--button);
-    border: none;
+    border: 3px solid var(--secondary);
     color: var(--button-text);
     padding: 0.5rem 0.8rem;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1rem;
+
 }
 
 button.toggle:hover,
