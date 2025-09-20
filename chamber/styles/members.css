@@ -68,6 +68,7 @@
     background-color: var(--odd);
 }
 
-a:-webkit-any-link {
+a:link,
+a:visited {
     color: var(--text);
 }
