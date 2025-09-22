@@ -4,28 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 Alexandra Fernandez</title>
+    <title>WDD 231 Home page Chamber project Alexandra Fernandez</title>
     <meta name="description" content="Home page of Alexandra Fernandez, WDD 231 student.">
     <meta name="author" content="Alexandra Fernandez">
+    <meta property="og:title" content="Chamber of Commerce Lima - ALEXANDRA FERNANDEZ (efficodex)">
     <meta property="og:description"
         content="home page of Chamber Commerce Lima fiction assigment of Alexandra Fernandez, WDD 231 student.">
     <meta property="og:image" content="https://efficodex.github.io/wdd231/chamber/images/logo-chamber-lima.jpg">
-    <meta property="og:title" content="Chamber of Commerce Lima - ALEXANDRA FERNANDEZ (efficodex)">
     <meta property="og:url" content="https://efficodex.github.io/wdd231/chamber/index.html">
+
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:wght@500&display=swap"
         rel="stylesheet">
-        
-        <link rel="stylesheet" href="styles/base-small.css">
-        <link rel="stylesheet" href="styles/index.css">
-        <link rel="stylesheet" href="styles/large.css">
-      
-    
-    
-    
+
+    <link rel="stylesheet" href="styles/base-small.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 
 <body>
@@ -37,39 +34,34 @@
             The Chamber of Commerce Lima
         </div>
 
-
-
-
         <div class="header-buttons">
             <nav id="menu">
                 <a href="index.html">Home</a>
                 <a href="directory.html">Directory</a>
                 <a href="#">Join</a>
             </nav>
-
             <button class="toggle">🌙</button>
             <button class="menu" id="menu_btn"></button>
         </div>
     </header>
 
-
-
+    <!-- Main Content -->
     <main>
         <div class="index-chamber">
-    
+
             <!-- Hero -->
             <section class="hero">
                 <img src="images/hero.jpg" alt="Scalable responsive hero image">
-                <h1>"Your Gateway to Growth and Opportunity in Lima"</h1>
+                <h1>Your Gateway to Growth and Opportunity in Lima</h1>
                 <a href="join.html" class="cta">Join the Chamber</a>
             </section>
-    
+
             <!-- Events -->
             <section class="rectangle">
                 <h2>Events</h2>
                 <p>Upcoming Business Networking: Sept 30, 7:00 PM</p>
             </section>
-    
+
             <!-- Current Weather -->
             <section class="rectangle">
                 <h2>Current Weather</h2>
@@ -81,7 +73,7 @@
                     </figure>
                 </div>
             </section>
-    
+
             <!-- Weather Forecast -->
             <section class="rectangle">
                 <h2>Weather Forecast</h2>
@@ -106,16 +98,15 @@
                     </tbody>
                 </table>
             </section>
-    
+
             <!-- Spotlights -->
             <section class="spotlights">
                 <h2>Member Spotlights</h2>
                 <div class="spotlight-container"></div>
             </section>
-    
+
         </div>
     </main>
-
 
     <!-- Footer -->
     <footer>
@@ -123,17 +114,24 @@
         <p>Los Geranios 663, Lima - Peru</p>
         <p>info@cclima.org | (01) 555-1234</p>
         <div class="social">
-            <a href="https://www.facebook.com/"><img src="images/facebook.png"
-                    alt="Lowercase white letter f centered on a blue square background representing Facebook logo, conveying a friendly and social atmosphere"></a>
-            <a href="https://www.instagram.com/"><img src="images/instagram.png"
-                    alt="White outline of a camera with a circular lens and viewfinder centered on a blue square background representing Instagram logo, conveying a modern and social atmosphere"></a>
-            <a href="https://www.twitter.com/"><img src="images/twitter.png"
-                    alt="White silhouette of a bird in flight centered on a blue square background representing Twitter logo, conveying a lively and social atmosphere"></a>
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook.png"
+                    alt="Lowercase white letter f centered on a blue square background representing Facebook logo">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.png"
+                    alt="White outline of a camera with a circular lens on a blue square background representing Instagram logo">
+            </a>
+            <a href="https://www.twitter.com/">
+                <img src="images/twitter.png"
+                    alt="White silhouette of a bird in flight on a blue square background representing Twitter logo">
+            </a>
         </div>
-        <span id="currentYear">&#169; </span>
-        <br>
+        <span id="currentYear">&#169;</span><br>
         <span id="lastModified"></span>
     </footer>
+
+    <!-- Scripts -->
     <script src="scripts/header-footer.js" defer></script>
     <script src="scripts/index.js" defer></script>
     <script src="scripts/forecast.js" defer></script>
