@@ -45,13 +45,13 @@
     
         .rectangle:first-of-type {
             grid-column: 2 / 3;
-            /* Events */
+            /* Current Weather */
             grid-row: 2 / 3;
         }
     
         .rectangle:nth-of-type(2) {
             grid-column: 1 / 2;
-            /* Current Weather */
+            /* Events */
             grid-row: 2 / 3;
         }
     

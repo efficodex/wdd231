@@ -26,6 +26,7 @@
     font-weight: bold;
 }
 
+
 /* Rectangle sections */
 .rectangle {
     text-align: center;
@@ -35,7 +36,7 @@
 }
 
 .rectangle h2 {
-    color: var(--header);
+    color: var(--text);
 }
 
 /* Weather table */
