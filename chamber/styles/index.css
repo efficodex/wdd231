@@ -24,6 +24,10 @@
     font-weight: bold;
 }
 
+.hero h1{
+    display: none;
+}
+
 
 /* Rectangle sections */
 .rectangle {

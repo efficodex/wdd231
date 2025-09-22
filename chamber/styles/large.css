@@ -42,6 +42,19 @@
             grid-row: 1 / 2;
             height: 500px;
         }
+
+                .hero h1 {
+                    position: absolute;
+                    top: 5%;
+                    left: 15%;
+                    font-size: 2rem;
+                    color: var(--button-text);
+                    background: rgba(0, 0, 0, 0.5);
+                    padding: 1rem 1rem;
+                    border-radius: 8px;
+                    text-align: center;
+                    max-width: 90%;
+                }
     
         .rectangle:first-of-type {
             grid-column: 2 / 3;
