@@ -33,7 +33,7 @@ body {
 /* HEADER */
 header {
     background-color: var(--header);
-    color: var(--button-text);
+    color: var(--text);
     display: flex;
     align-items: center;
     justify-content: space-between;

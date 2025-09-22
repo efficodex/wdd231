@@ -42,7 +42,7 @@
             grid-row: 1 / 2;
             height: 500px;
         }
-
+    
                 .hero h1 {
                     display: block;
                     position: absolute;
@@ -81,18 +81,17 @@
             background-color: var(--button);
             color: var(--button-text);
         }
-
-                /* que el bloque de spotlights ocupe toda la fila del grid */
-                .spotlights {
-                    grid-column: 1 / -1;
-                }
-        
-                /* siempre 3 columnas en desktop */
-                .spotlight-container {
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                    gap: 1rem;
-                }
-       
-        
+    
+        /* que el bloque de spotlights ocupe toda la fila del grid */
+        .spotlights {
+            grid-column: 1 / -1;
         }
+    
+        /* siempre 3 columnas en desktop */
+        .spotlight-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+    
+    }
