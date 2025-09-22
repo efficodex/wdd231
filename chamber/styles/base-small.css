@@ -1,26 +1,24 @@
-
 :root {
     --background: #FFFFFF;
-    --text: #1C2A38;
+    --text: #0B141D;
     --header: #0D1B2A;
-    --secondary: #E6E6E6;
-    --button: #8C0000;
-    --button-hover: #660000;
+    --secondary: #D9D9D9;
+    --button: #7A0000;
+    --button-hover: #5A0000;
     --button-text: #FFFFFF;
     --even: #d1d1d1;
     --odd: #ffffff;
 }
 
-
 body.dark {
     --background: #0B141D;
     --text: #FFFFFF;
-    --header: #0D1B2A;
-    --secondary: #1A2532;
-    --button: #8C0000;
-    --button-hover: #660000;
+    --header: #152435;
+    --secondary: #243447;
+    --button: #9C1B1B;
+    --button-hover: #7A1313;
     --button-text: #FFFFFF;
-    --even: #212c3b;
+    --even: #1C2736;
     --odd: #0B141D;
 }
 

@@ -1,0 +1,113 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    /* móvil */
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .cta {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--button);
+    color: var(--button-text);
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Rectangle sections */
+.rectangle {
+    text-align: center;
+    border: 2px solid var(--secondary);
+    background-color: var(--background);
+    padding: 1rem;
+}
+
+.rectangle h2 {
+    color: var(--header);
+}
+
+/* Weather table */
+#forecastTable {
+    margin: auto;
+    border: thin solid var(--secondary);
+    box-shadow: 0 0 10px var(--secondary);
+    border-collapse: collapse;
+    max-height: 200px;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+#forecastTable caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: .85rem;
+    color: var(--text);
+}
+
+#forecastTable thead tr:first-child {
+    background-color: var(--header);
+    color: var(--button-text);
+}
+
+#forecastTable th,
+#forecastTable td {
+    padding: 7px 15px;
+    border: 1px solid var(--secondary);
+    text-align: center;
+}
+
+#forecastTable thead tr:nth-child(2) {
+    background-color: var(--secondary);
+    font-size: larger;
+}
+
+#forecastTable tbody tr:nth-child(odd) {
+    background-color: var(--odd);
+}
+
+#forecastTable tbody tr:nth-child(even) {
+    background-color: var(--even);
+}
+
+/* Spotlights */
+.spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.spotlight-card {
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    padding: 1rem;
+    background: var(--odd);
+    text-align: center;
+    color: var(--text);
+}
+
+.spotlight-card img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.spotlight-card .badge {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    background: var(--button);
+    color: var(--button-text);
+    font-weight: bold;
+}
