@@ -109,6 +109,12 @@ let currentFilter = 'ALL';
             ${course.subject} ${course.number}
             </h3>
         `;
+          
+            /* evento de clic para mostrar detalles del curso en el modal */ 
+                card.addEventListener("click", () => {
+                    displayCourseDetails(course);
+                });
+
         container.appendChild(card);
         });
 
@@ -121,4 +127,28 @@ let currentFilter = 'ALL';
     }
 
     // Inicial
-    renderCourses();
+renderCourses();
+    
+const courseDetails = document.getElementById('course-details');
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+
+  // abrir modal
+  courseDetails.showModal();
+
+  // seleccionar el botón después de insertarlo
+  const closeModal = document.getElementById("closeModal");
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+
+}
