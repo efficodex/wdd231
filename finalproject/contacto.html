@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | El loco y sus cinco</title>
+    <meta name="description" content="Solicita una cotización para contratar a la banda El loco y sus cinco.">
+    <meta name="author" content="Alexandra Fernández">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🎸 El loco y sus cinco</a>
+            <button id="menu-toggle" aria-label="Menú">☰</button>
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="repertorio.html">Repertorio</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Solicita una Cotización</h1>
+        <form action="form-action.html" method="get">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="fecha">Fecha del evento:</label>
+            <input type="date" id="fecha" name="fecha">
+
+            <label for="evento">Tipo de evento:</label>
+            <select id="evento" name="evento">
+                <option value="boda">Boda</option>
+                <option value="cumpleaños">Cumpleaños</option>
+                <option value="corporativo">Evento Corporativo</option>
+            </select>
+
+            <label for="mensaje">Detalles:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 El loco y sus cinco | <a href="attributions.html">Attributions</a></p>
+    </footer>
+</body>
+
+</html>

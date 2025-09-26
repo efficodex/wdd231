@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos enviados | El loco y sus cinco</title>
+    <meta name="description" content="Visualiza los datos enviados desde el formulario de contacto.">
+    <meta name="author" content="Alexandra Fernández">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <script type="module">
+        document.addEventListener("DOMContentLoaded", () => {
+            const params = new URLSearchParams(window.location.search);
+            const output = document.getElementById("form-data");
+
+            if ([...params].length === 0) {
+                output.innerHTML = "<p>No se recibieron datos del formulario.</p>";
+            } else {
+                output.innerHTML = `
+          <h2>Datos recibidos:</h2>
+          <ul>
+            ${[...params].map(([key, value]) =>
+                    `<li><strong>${key}:</strong> ${decodeURIComponent(value)}</li>`
+                ).join("")}
+          </ul>
+        `;
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🎸 El loco y sus cinco</a>
+            <button id="menu-toggle" aria-label="Menú">☰</button>
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="repertorio.html">Repertorio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Confirmación de envío</h1>
+        <div id="form-data"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 El loco y sus cinco | <a href="attributions.html">Attributions</a></p>
+    </footer>
+</body>
+
+</html>
