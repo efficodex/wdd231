@@ -93,5 +93,19 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 1rem;
         }
-    
-    }
+
+        /*JOIN PAGE*/
+        form.designOne {
+            margin: 50px;
+            padding: 50px;
+            padding-right: 80px;
+        }
+        .join-membership-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            padding: 50px;
+        }
+
+        

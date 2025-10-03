@@ -33,7 +33,7 @@ body {
 /* HEADER */
 header {
     background-color: var(--header);
-    color: var(--text);
+    color: var(--button-text);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -200,7 +200,7 @@ form.designOne input[type="submit"]:hover {
 
 .join-card h2 {
     margin-bottom: 0.5rem;
-    color: var(--header);
+    color: var(--text);
 }
 
 .join-card a {
