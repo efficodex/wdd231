@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 Join page Chamber project Alexandra Fernandez</title>
+    <meta name="description" content="Join page of Alexandra Fernandez, WDD 231 student.">
+    <meta name="author" content="Alexandra Fernandez">
+    <meta property="og:title" content="Chamber of Commerce Lima - ALEXANDRA FERNANDEZ (efficodex)">
+    <meta property="og:description"
+        content="home page of Chamber Commerce Lima fiction assigment of Alexandra Fernandez, WDD 231 student.">
+    <meta property="og:image" content="https://efficodex.github.io/wdd231/chamber/images/logo-chamber-lima.jpg">
+    <meta property="og:url" content="https://efficodex.github.io/wdd231/chamber/index.html">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base-small.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/logo-chamber-lima.jpg"
+                alt="Stylized letters C and L in blue and red, representing Chamber Lima, with a clean white background and a calm professional tone.">
+            The Chamber of Commerce Lima
+        </div>
+
+        <div class="header-buttons">
+            <nav id="menu">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="#">Join</a>
+            </nav>
+            <button class="toggle" aria-label="Toggle dark mode">🌙</button>
+            <button class="menu" id="menu_btn" aria-label="navigation menu"></button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Join the Chamber</h1>
+    
+        <form method="get" action="thankyou.html" class="designOne">
+    
+            <label>First Name
+                <input type="text" name="firstName" required autocomplete="given-name" title="Applicant's First Name">
+            </label>
+    
+            <label>Last Name
+                <input type="text" name="lastName" required autocomplete="family-name" title="Applicant's Last Name">
+            </label>
+    
+            <label>Organizational Title
+                <input type="text" name="orgTitle" autocomplete="organization-title" title="Organizational Title"
+                    pattern="[A-Za-z\\-\\s]{7,}">
+            </label>
+    
+            <label>Email
+                <input type="email" name="email" required autocomplete="email" placeholder="example@email.com"
+                    title="Applicant's Email Address">
+            </label>
+    
+            <label>Mobile Phone
+                <input type="tel" name="mobile" required autocomplete="tel" title="Applicant's Mobile Phone">
+            </label>
+    
+            <label>Organization Name
+                <input type="text" name="organization" required autocomplete="organization"
+                    title="Business or Organization Name">
+            </label>
+    
+            <h3>Membership Level</h3>
+            <label>
+                <input type="radio" name="membership" value="np" required>
+                NP Membership (Free for Non-Profits)
+            </label>
+            <label>
+                <input type="radio" name="membership" value="bronze">
+                Bronze Membership
+            </label>
+            <label>
+                <input type="radio" name="membership" value="silver">
+                Silver Membership
+            </label>
+            <label>
+                <input type="radio" name="membership" value="gold">
+                Gold Membership
+            </label>
+    
+            <h3>Organization Description</h3>
+            <label>
+                <textarea name="description" title="Business or Organization Description"></textarea>
+            </label>
+    
+            <!-- Hidden timestamp -->
+            <input type="hidden" name="timestamp" id="timestamp">
+    
+            <input type="submit" value="Submit Application">
+        </form>
+    
+        <!-- Membership Cards -->
+        <section class="join-membership-cards">
+            <article class="join-card" data-modal="modal-np">
+                <h2>NP Membership</h2>
+                <p>No fee, perfect for non-profits.</p>
+                <a href="#" class="open-modal">More Info</a>
+            </article>
+            <article class="join-card" data-modal="modal-bronze">
+                <h2>Bronze Membership</h2>
+                <p>Entry-level membership with benefits.</p>
+                <a href="#" class="open-modal">More Info</a>
+            </article>
+            <article class="join-card" data-modal="modal-silver">
+                <h2>Silver Membership</h2>
+                <p>Expanded benefits and discounts.</p>
+                <a href="#" class="open-modal">More Info</a>
+            </article>
+            <article class="join-card" data-modal="modal-gold">
+                <h2>Gold Membership</h2>
+                <p>Premium benefits and advertising.</p>
+                <a href="#" class="open-modal">More Info</a>
+            </article>
+        </section>
+    
+        <!-- Modals -->
+        <dialog id="modal-np">
+            <h2>NP Membership Benefits</h2>
+            <p>Special events, networking for non-profits.</p>
+            <button class="close-modal">Close</button>
+        </dialog>
+        <dialog id="modal-bronze">
+            <h2>Bronze Membership Benefits</h2>
+            <p>Event discounts, basic advertising.</p>
+            <button class="close-modal">Close</button>
+        </dialog>
+        <dialog id="modal-silver">
+            <h2>Silver Membership Benefits</h2>
+            <p>Extra training, spotlight ads, bigger discounts.</p>
+            <button class="close-modal">Close</button>
+        </dialog>
+        <dialog id="modal-gold">
+            <h2>Gold Membership Benefits</h2>
+            <p>All benefits plus premium advertising and VIP events.</p>
+            <button class="close-modal">Close</button>
+        </dialog>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>The Chamber of Commerce Lima</strong></p>
+        <p>Los Geranios 663, Lima - Peru</p>
+        <p>info@cclima.org | (01) 555-1234</p>
+        <div class="social">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook.png"
+                    alt="Lowercase white letter f centered on a blue square background representing Facebook logo">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.png"
+                    alt="White outline of a camera with a circular lens on a blue square background representing Instagram logo">
+            </a>
+            <a href="https://www.twitter.com/">
+                <img src="images/twitter.png"
+                    alt="White silhouette of a bird in flight on a blue square background representing Twitter logo">
+            </a>
+        </div>
+        <span id="currentYear">&#169;</span><br>
+        <span id="lastModified"></span>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</body>
+
+</html>
