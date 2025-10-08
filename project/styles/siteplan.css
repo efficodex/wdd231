@@ -1,111 +1,178 @@
 
 
- /* ====== PALETA LIGHT ====== */
- :root {
-     --background: #FAF8F4;
-     --text-dark: #1B1B1B;
-     --text-light: #FFFFFF;
+/* ===== MOBILE FIRST (base) ===== */
 
-     --accent-green: #3E7C6A;
-     --accent-yellow: #E6B84D;
-     --accent-orange: #CC7448;
-     --accent-red: #B74A45;
-     --accent-cream: #F2E1C2;
+/* ====== PALETA LIGHT ====== */
+:root {
+    --background: #FAF8F4;
+    --text-dark: #1B1B1B;
+    --text-light: #FFFFFF;
 
-     --button-bg: var(--accent-green);
-     --button-text: var(--text-light);
-     --button-hover: #2D5C4F;
- }
+    --accent-green: #3E7C6A;
+    --accent-yellow: #E6B84D;
+    --accent-orange: #CC7448;
+    --accent-red: #B74A45;
+    --accent-cream: #F2E1C2;
 
- /* ====== PALETA DARK ====== */
- [data-theme="dark"] {
-     --background: #1B2A26;
-     --text-dark: #0D0D0D;
-     --text-light: #FAF8F4;
+    --button-bg: var(--accent-green);
+    --button-text: var(--text-light);
+    --button-hover: #2D5C4F;
+}
 
-     --accent-green: #3E7C6A;
-     --accent-yellow: #FFD97C;
-     --accent-orange: #F19A63;
-     --accent-red: #F46E68;
-     --accent-cream: #F5EBD1;
+/* ====== PALETA DARK ====== */
+[data-theme="dark"] {
+    --background: #1B2A26;
+    --text-dark: #0D0D0D;
+    --text-light: #FAF8F4;
 
-     --button-bg: var(--accent-yellow);
-     --button-text: #1B1B1B;
-     --button-hover: #E6B84D;
- }
+    --accent-green: #3E7C6A;
+    --accent-yellow: #FFD97C;
+    --accent-orange: #F19A63;
+    --accent-red: #F46E68;
+    --accent-cream: #F5EBD1;
 
- /* ====== ESTILOS GENERALES ====== */
- body {
-     font-family: 'Baloo 2', sans-serif;
-     background-color: var(--background);
-     color: var(--text-dark);
-     margin: 0;
-     padding: 0;
-     line-height: 1.6;
-     transition: background-color 0.3s, color 0.3s;
- }
+    --button-bg: var(--accent-yellow);
+    --button-text: #1B1B1B;
+    --button-hover: #E6B84D;
+}
 
- header {
-     background-color: var(--accent-green);
-     color: var(--text-light);
-     text-align: center;
-     padding: 1.5rem;
- }
+/* ====== ESTILOS GENERALES ====== */
+body {
+    font-family: 'Baloo 2', sans-serif;
+    background-color: var(--background);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
 
- header h1 {
-     font-family: 'Pacifico', cursive;
-     font-size: 2rem;
-     margin: 0;
- }
+/* ===== HEADER ===== */
+header {
+    background-color: var(--accent-green);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem;
+}
 
- main {
-     max-width: 900px;
-     margin: 2rem auto;
-     padding: 2rem;
-     background-color: var(--accent-cream);
-     border-radius: 1rem;
-     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
- }
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.6rem;
+    margin: 0;
+}
 
- h2 {
-     color: var(--accent-red);
-     font-family: 'Pacifico', cursive;
- }
+#logo {
+    width: 80%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 8px;
+}
 
- section {
-     margin-bottom: 2rem;
- }
+/* ===== MAIN ===== */
+main {
+    width: 90%;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    background-color: var(--accent-cream);
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
- ul {
-     list-style-type: disc;
-     padding-left: 1.5rem;
- }
+h2 {
+    color: var(--accent-red);
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+}
 
- /* ====== BOTÓN LIGHT/DARK ====== */
- #theme-toggle {
-     position: fixed;
-     top: 1rem;
-     right: 1rem;
-     background-color: var(--button-bg);
-     color: var(--button-text);
-     border: none;
-     border-radius: 8px;
-     padding: 0.5rem 1rem;
-     cursor: pointer;
-     font-size: 1rem;
-     font-family: 'Baloo 2', sans-serif;
-     transition: background-color 0.3s;
- }
+section {
+    margin-bottom: 1.5rem;
+}
 
- #theme-toggle:hover {
-     background-color: var(--button-hover);
- }
+ul {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+}
 
- footer {
-     text-align: center;
-     padding: 1rem;
-     background-color: var(--accent-green);
-     color: var(--text-light);
-     border-top: 4px solid var(--accent-yellow);
- }
+/* ====== IMÁGENES ====== */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
 
+/* ====== BOTÓN LIGHT/DARK ====== */
+#theme-toggle {
+    position: fixed;
+    top: 0.75rem;
+    right: 0.75rem;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: 'Baloo 2', sans-serif;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+#theme-toggle:hover {
+    background-color: var(--button-hover);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--accent-green);
+    color: var(--text-light);
+    border-top: 4px solid var(--accent-yellow);
+    font-size: 0.9rem;
+}
+
+/* ========================================================= */
+/* ===== VERSIÓN LARGE / DESKTOP ============================ */
+/* ========================================================= */
+@media screen and (min-width: 768px) {
+    header {
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    #logo {
+        max-width: 350px;
+    }
+
+    main {
+        max-width: 900px;
+        padding: 2rem;
+        margin: 2rem auto;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p,
+    li {
+        font-size: 1rem;
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+
+    /* Wireframes lado a lado */
+    section img {
+        width: 48%;
+        margin-right: 2%;
+    }
+
+    section img:last-child {
+        margin-right: 0;
+    }
+}
