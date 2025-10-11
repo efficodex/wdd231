@@ -228,3 +228,55 @@ form.designOne input[type="submit"]:hover {
         opacity: 1;
     }
 }
+
+/* DISCOVER CONTENT */
+#discover_main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card_discover {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "image"
+        "address"
+        "description"
+        "button";
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--background);
+}
+
+.card_discover h2 {
+    grid-area: title;
+}
+
+.card_discover figure {
+    grid-area: image;
+}
+
+.card_discover figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card_discover address {
+    grid-area: address;
+    font-style: normal;
+}
+
+.card_discover p {
+    grid-area: description;
+}
+
+.card_discover .btn_discover {
+    grid-area: button;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
