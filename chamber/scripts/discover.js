@@ -18,7 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const img = document.createElement("img");
         img.src = place.photo;
         img.alt = place.name;
+        img.loading = "lazy"; // Lazy-loading 
         figure.appendChild(img);
+
 
         // Dirección
         const address = document.createElement("address");
@@ -30,8 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Botón
         const button = document.createElement("button");
-        button.textContent = "Aprender más";
+        button.textContent = "Learn more";
         button.classList.add("btn_discover");
+        button.setAttribute("aria-label", "Learn more about this place");
+
 
         // Ensamblar tarjeta
         card.appendChild(title);
