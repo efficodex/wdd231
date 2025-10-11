@@ -113,4 +113,16 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
             padding: 50px;}
+
+        #visitMessage {
+            grid-column: 1 / -1;
+        }
+
+        .card_discover figure img {
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .card_discover figure:hover img {
+            transform: scale(1.03);
+        }
 }        

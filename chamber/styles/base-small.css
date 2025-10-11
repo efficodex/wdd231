@@ -237,6 +237,17 @@ form.designOne input[type="submit"]:hover {
     padding: 1rem;
 }
 
+#visitMessage {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--background);
+    border-radius: 8px;
+    width: 90%;
+}
+
 .card_discover {
     display: grid;
     grid-template-areas:
