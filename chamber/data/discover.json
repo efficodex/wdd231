@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Historic Center of Lima",
+    "photo": "centro_de_lima.webp",
+    "description": "Colonial area with the Main Square, Cathedral, and Government Palace, known for its historic architecture.",
+    "location": "Main Square of Lima, Cercado de Lima"
+  },
+  {
+    "name": "Barranco District",
+    "photo": "barranco.webp",
+    "description": "Bohemian neighborhood famous for its street art, Bridge of Sighs, cultural spots, and cafes.",
+    "location": "Barranco, Lima"
+  },
+  {
+    "name": "Miraflores and the Malecón",
+    "photo": "miraflores.webp",
+    "description": "Seaside cliffs with parks, paragliding, and the iconic Love Park overlooking the Pacific Ocean.",
+    "location": "Miraflores, Lima"
+  },
+  {
+    "name": "Magic Water Circuit",
+    "photo": "parque_de_las_aguas.webp",
+    "description": "Night show of illuminated, interactive fountains located in the Park of the Reserve.",
+    "location": "Park of the Reserve, Cercado de Lima"
+  },
+  {
+    "name": "Larco Museum",
+    "photo": "museo_larco.webp",
+    "description": "Pre-Columbian art museum housed in an 18th-century vice-royal mansion.",
+    "location": "Pueblo Libre, Lima"
+  },
+  {
+    "name": "Huaca Pucllana",
+    "photo": "huaca_pucllana.webp",
+    "description": "Ancient adobe pyramid offering guided tours in the middle of the modern city.",
+    "location": "Miraflores, Lima"
+  },
+  {
+    "name": "Costa Verde",
+    "photo": "costa_verde.webp",
+    "description": "Coastal strip with beaches, surfing spots, bike paths, and ocean views.",
+    "location": "Lima Coastal Area"
+  },
+  {
+    "name": "Kennedy Park",
+    "photo": "parque_kennedy.webp",
+    "description": "Central park of Miraflores with food stalls, artisan fairs, and lively surroundings.",
+    "location": "Miraflores, Lima"
+  }
+]
