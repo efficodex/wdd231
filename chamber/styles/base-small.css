@@ -279,6 +279,7 @@ form.designOne input[type="submit"]:hover {
     background-color: var(--background);
 }
 
+
 .card_discover h2 {
     grid-area: title;
 }

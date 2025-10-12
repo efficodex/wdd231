@@ -1,0 +1,10 @@
+@media (min-width: 550px) {
+    .card_discover {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "image image"
+            "address description"
+            "button button";
+    }
+}
