@@ -1,0 +1,141 @@
+:root {
+    --background: #FAF8F4;
+    --text: #1B1B1B;
+    --header: #3E7C6A;
+    --secondary: #F2E1C2;
+    --button: #3E7C6A;
+    --button-hover: #2D5C4F;
+    --button-text: #FFFFFF;
+    --even: #F5EBD1;
+    --odd: #FAF8F4;
+}
+
+body.dark {
+    --background: #1B2A26;
+    --text: #FAF8F4;
+    --header: #3E7C6A;
+    --secondary: #F5EBD1;
+    --button: #FFD97C;
+    --button-hover: #E6B84D;
+    --button-text: #1B1B1B;
+    --even: #24322E;
+    --odd: #1B2A26;
+}
+
+body {
+    margin: 0;
+    font-family: "Baloo 2", sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    transition: all 0.3s ease-in-out;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Pacifico", cursive;
+    color: var(--header);
+    margin: 0.5em 0;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: var(--header);
+    color: var(--button-text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+    position: relative;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+button.toggle,
+button.menu {
+    background-color: var(--button);
+    border: 3px solid var(--secondary);
+    color: var(--button-text);
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button.toggle:hover,
+button.menu:hover {
+    background-color: var(--button-hover);
+}
+
+/* ===== NAVIGATION (ya no es absoluto) ===== */
+nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--secondary);
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--text);
+    border-bottom: 1px solid var(--header);
+}
+
+nav a:hover {
+    background-color: var(--button);
+    color: var(--button-text);
+}
+
+nav.show {
+    display: flex;
+}
+
+#menu_btn::before {
+    content: "☰";
+}
+
+#menu_btn.open::before {
+    content: "❌";
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--header);
+    color: var(--button-text);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer .social {
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .social img {
+    width: 30px;
+}
+
+/* MAIN (ya no necesita margin-top) */
+main {
+    padding: 1rem;
+}

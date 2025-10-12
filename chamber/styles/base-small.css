@@ -24,13 +24,26 @@ body.dark {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Baloo 2", sans-serif;
     background-color: var(--background);
     color: var(--text);
     transition: all 0.3s ease-in-out;
 }
 
-/* HEADER */
+/* Titulares principales */
+h1, h2, h3 {
+    font-family: "Pacifico", cursive;
+    color: var(--header);
+    margin: 0.5em 0;
+}
+
+/* Texto destacado opcional */
+.highlight {
+    font-family: "Lobster Two", cursive;
+    color: var(--button-hover);
+}
+
+/* ===== HEADER ===== */
 header {
     background-color: var(--header);
     color: var(--button-text);
@@ -43,6 +56,14 @@ header {
 .logo {
     font-weight: bold;
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
 }
 
 .header-buttons {
@@ -60,7 +81,6 @@ button.menu {
     border-radius: 6px;
     cursor: pointer;
     font-size: 1rem;
-
 }
 
 button.toggle:hover,
@@ -68,7 +88,7 @@ button.menu:hover {
     background-color: var(--button-hover);
 }
 
-/* NAVIGATION */
+/* ===== NAVIGATION ===== */
 nav {
     display: none;
     flex-direction: column;
@@ -91,7 +111,15 @@ nav.show {
     display: flex;
 }
 
-/* FOOTER */
+#menu_btn::before {
+    content: "☰";
+}
+
+#menu_btn.open::before {
+    content: "❌";
+}
+
+/* ===== FOOTER ===== */
 footer {
     background-color: var(--header);
     color: var(--button-text);
@@ -107,20 +135,9 @@ footer .social {
     gap: 1rem;
 }
 
-footer .social a {
-    color: var(--button-text);
-    text-decoration: none;
-    font-size: 1.2rem;
+footer .social img {
+    width: 30px;
 }
-
-#menu_btn::before {
-    content: "☰";
-}
-
-#menu_btn.open::before {
-    content: "❌";
-}
-
 
 /* JOIN CONTENT */
 /* Formulario */
