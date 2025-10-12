@@ -36,7 +36,7 @@ h1, h2, h3 {
     color: var(--text);
     margin: 0.5em 0;
 }
-
+/* Titular principal */
 h1 {
     font-size: 2.5rem;
     text-align: center;
