@@ -48,4 +48,33 @@
         .view-toggle-setlist button:hover {
             background-color: var(--button-hover);
         }
+
+    /*HOMEPAGE*/
+        .hero-image {
+            height: 80vh;
+        }
+    
+        .hero-title {
+            font-size: 2.5rem;
+        }
+    
+        .hero-subtitle {
+            font-size: 1.4rem;
+        }
+    
+        .hero-buttons {
+            flex-direction: row;
+            justify-content: center;
+            gap: 1rem;
+        }
+    
+        .section-title {
+            font-size: 1.8rem;
+        }
+    
+        .random-song {
+            width: 60%;
+            margin: 0 auto 1.5rem;
+            font-size: 1.2rem;
+        }
 }

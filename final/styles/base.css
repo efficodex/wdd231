@@ -27,6 +27,7 @@ body {
     font-family: "Baloo 2", sans-serif;
     background-color: var(--background);
     color: var(--text);
+    padding: 0;
     transition: all 0.3s ease-in-out;
 }
 
@@ -138,6 +139,86 @@ footer .social img {
 /* MAIN (ya no necesita margin-top) */
 main {
     padding: 1rem;
+}
+
+
+/*INDEX home page*/
+/* --- Hero --- */
+.hero {
+    position: relative;
+    text-align: center;
+    color: var(--background);
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.6);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.btn-spotify,
+.btn-youtube,
+ {
+    background-color: var(--button);
+    color: var(--button-text);
+    text-decoration: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-spotify:hover,
+.btn-youtube:hover {
+    background-color: var(--button-hover);
+}
+
+/* --- Random Song Section --- */
+.random-song-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--even);
+}
+
+.section-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.random-song {
+    background-color: var(--odd);
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
 
 /*SETLIST*/

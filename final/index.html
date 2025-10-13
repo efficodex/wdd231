@@ -42,9 +42,40 @@
     </nav>
 
     <!-- Main Content -->
-    <main>
-        Hola
+    <main class="main-content">
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/hero-band-large.webp">
+                <img src="images/hero-band-small.webp" alt="El Loko y Susinko performing live on stage" class="hero-image">
+            </picture>
+    
+            <div class="hero-text">
+                <h2 class="hero-title">Rock con alma, locura y corazón 🎸🔥</h2>
+                <p class="hero-subtitle">El sonido que no se olvida</p>
+
+                <!-- LISTEN SECTION -->
+                <section class="listen">
+                    <h2>🎧 Escúchanos en línea</h2>
+                    <p>Disfruta nuestras canciones en tu plataforma favorita.</p>
+                </section>
+                <div class="hero-buttons">
+                    <a href="https://open.spotify.com/" target="_blank" class="btn-spotify">🎧 Escuchar en Spotify</a>
+                    <a href="https://youtube.com/" target="_blank" class="btn-youtube">▶️ Ver en YouTube</a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- RANDOM SONG MODULE -->
+        <section class="random-song-section">
+            <h3 class="section-title">🎵 Canción del día</h3>
+            <div id="random-song" class="random-song">Cargando canción...</div>
+        </section>
+
+        
+    
     </main>
+
     <footer>
         <p><strong>El Loko y SUsinko</strong></p>
         <p>SUD Lima - Peru</p>
@@ -68,6 +99,7 @@
     
     <!-- Scripts -->
     <script src="scripts/header-footer.js" defer></script>
+    <script type="module" src="scripts/home.js"></script>
     </body>
     
     </html>
