@@ -23,7 +23,7 @@
         border: none;
         padding: 0.5rem 1rem;
         background-color: var(--secondary);
-        color: var(--text);
+        color: var(--button-text);
     }
 
     nav a:hover {
