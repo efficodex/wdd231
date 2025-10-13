@@ -139,3 +139,155 @@ footer .social img {
 main {
     padding: 1rem;
 }
+
+/*SETLIST*/
+/* ✅ GRID layout */
+.grid-setlist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* ✅ Cards */
+.song-card {
+    background-color: var(--secondary);
+    color: var(--text);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.song-card:hover {
+    transform: scale(1.03);
+}
+
+/* Link dentro de cards */
+.song-card a {
+    color: var(--button);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.song-card a:hover {
+    color: var(--button-hover);
+}
+
+/* ✅ LIST layout (tabla) */
+.list-setlist {
+    padding: 1rem;
+}
+
+.list-view {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--secondary);
+}
+
+.list-view th,
+.list-view td {
+    padding: 0.75rem;
+    text-align: left;
+    color: var(--text);
+}
+
+.list-view thead {
+    background-color: var(--button);
+    color: var(--button-text);
+}
+
+.list-view tr.even {
+    background-color: var(--even);
+}
+
+.list-view tr.odd {
+    background-color: var(--odd);
+}
+
+.list-view a {
+    color: var(--button);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.list-view a:hover {
+    color: var(--button-hover);
+}
+
+/* ✅ Botones del toggle */
+.view-toggle-setlist button {
+    display: none;
+}
+
+/*CARDS MIEMBROS*/
+.miembros-grid {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.miembro-card {
+    background-color: var(--secondary);
+    color: var(--text);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.miembro-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.miembro-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+}
+
+.miembro-card button {
+    background-color: var(--button);
+    color: var(--button-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.miembro-card button:hover {
+    background-color: var(--button-hover);
+}
+
+/*MODAL*/
+#modal-miembro {
+    padding: 1.5rem;
+    border: none;
+    max-width: 400px;
+    border-radius: 10px;
+    background-color: var(--secondary);
+    color: var(--text);
+}
+
+#modal-miembro img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+#close-modal {
+    background: var(--button);
+    color: var(--button-text);
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}

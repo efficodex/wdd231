@@ -31,4 +31,21 @@
         color: var(--button-text);
         border-radius: 6px;
     }
+
+        /* ✅ Botones del toggle */
+        .view-toggle-setlist button {
+            display: inline-block;
+            background-color: var(--button);
+            color: var(--button-text);
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-right: 0.5rem;
+            transition: background-color 0.2s;
+        }
+    
+        .view-toggle-setlist button:hover {
+            background-color: var(--button-hover);
+        }
 }

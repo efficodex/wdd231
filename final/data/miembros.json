@@ -5,7 +5,7 @@
     "rol": "Voz principal",
     "anios_musica": 10,
     "descripcion": "Apasionado por el rock alternativo y poseedor de una versátil voz.",
-    "foto": "img/miembros/diego.jpg"
+    "foto": "images/miembros/diego.jpg"
   },
   {
     "nombre": "Rodrigo",
@@ -13,7 +13,7 @@
     "rol": "Segunda voz / Pianista",
     "anios_musica": 5,
     "descripcion": "Poseedor de una energía arrolladora, con experiencia en presentaciones en vivo.",
-    "foto": "img/miembros/mariana.jpg"
+    "foto": "images/miembros/mariana.jpg"
   },
   {
     "nombre": "Franco",
@@ -21,7 +21,7 @@
     "rol": "Guitarrista",
     "anios_musica": 10,
     "descripcion": "Influenciado por el rock clásico y los riffs melódicos.",
-    "foto": "img/miembros/luis.jpg"
+    "foto": "images/miembros/luis.jpg"
   },
   {
     "nombre": "Ricardo",
@@ -29,7 +29,7 @@
     "rol": "Bajista",
     "anios_musica": 10,
     "descripcion": "Le gusta complementar el ritmo con bases sólidas y creativas.",
-    "foto": "img/miembros/carla.jpg"
+    "foto": "images/miembros/carla.jpg"
   },
   {
     "nombre": "Angello",
@@ -37,6 +37,6 @@
     "rol": "Baterista",
     "anios_musica": 18,
     "descripcion": "Con estilo versáti y amplia experiencia en distintos instrumentos (todo un virtuoso en la música).",
-    "foto": "img/miembros/andres.jpg"
+    "foto": "images/miembros/andres.jpg"
   }
 ]

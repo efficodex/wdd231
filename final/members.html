@@ -23,9 +23,8 @@
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/logo_recortado_comprimido.webp"
-                alt="Retro style band logo for El Loco y Susinko">
-            
+            <img src="images/logo_recortado_comprimido.webp" alt="Retro style band logo for El Loco y Susinko">
+
         </div>
 
         <div class="header-buttons">
@@ -43,8 +42,24 @@
 
     <!-- Main Content -->
     <main>
-        Hola
+        <h1>Miembros de la banda</h1>
+        <section id="miembros-container" class="miembros-grid"></section>
+
+        <!-- Modal reutilizable -->
+        <dialog id="modal-miembro">
+            <div id="modal-content">
+                <button id="close-modal" aria-label="Cerrar">✖</button>
+                <img id="modal-foto" alt="Foto del miembro">
+                <h2 id="modal-nombre"></h2>
+                <p><strong>Apodo:</strong> <span id="modal-apodo"></span></p>
+                <p><strong>Rol:</strong> <span id="modal-rol"></span></p>
+                <p><strong>Años en la música:</strong> <span id="modal-anios"></span></p>
+                <p id="modal-descripcion"></p>
+            </div>
+        </dialog>
     </main>
+
+
     <footer>
         <p><strong>El Loko y SUsinko</strong></p>
         <p>SUD Lima - Peru</p>
@@ -65,9 +80,11 @@
         </div>
         <span id="currentYear">&#169;</span><br>
     </footer>
-    
+
     <!-- Scripts -->
     <script src="scripts/header-footer.js" defer></script>
-    </body>
-    
-    </html>
+    <script src="scripts/miembros.js" defer></script>
+
+</body>
+
+</html>
