@@ -40,35 +40,17 @@
         <a href="contact.html">Contáctanos</a>
     </nav>
 
+    <header>
+        <h1>Gracias por tu mensaje</h1>
+    </header>
+
     <!-- Main Content -->
     <main class="form-container">
-        <h1 class="form-title">Contáctanos</h1>
     
-        <form action="form-action.html" method="GET" class="contact-form">
-    
-            <div class="form-field">
-                <label for="nombre" class="form-label">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" class="form-input" required>
-            </div>
-    
-            <div class="form-field">
-                <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" id="email" name="email" class="form-input" required>
-            </div>
-    
-            <div class="form-field">
-                <label for="telefono" class="form-label">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" class="form-input">
-            </div>
-    
-            <div class="form-field">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" class="form-textarea" required></textarea>
-            </div>
-    
-            <button type="submit" class="form-button">Enviar</button>
-        </form>
-
+        <div id="form-results"></div>
+        <button id="send-whatsapp">Enviar por WhatsApp</button>
+        <br><br>
+        <a href="contacto.html">Volver al formulario</a>
     </main>
 
     <footer>
@@ -92,8 +74,8 @@
         <span id="currentYear">&#169;</span><br>
     </footer>
 
-    <!-- Scripts -->
-    <script src="scripts/header-footer.js" defer></script>
+    <!-- Enlace al JS externo -->
+    <script src="scripts/form-action.js" type="module"></script>
 </body>
 
 </html>

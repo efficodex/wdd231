@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       card.classList.add("miembro-card");
 
       card.innerHTML = `
-        <img src="${miembro.foto}" alt="${miembro.nombreCompleto}">
+        <img src="${miembro.foto}" alt="${miembro.nombreCompleto}" loading="lazy">
         <h3>${miembro.nombreCompleto}</h3>
         <p>${miembro.rol}</p>
         <button class="open-modal" data-index="${index}">Más info</button>
