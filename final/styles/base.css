@@ -5,7 +5,7 @@
     --secondary: #F2E1C2;
     --button: #3E7C6A;
     --button-hover: #2D5C4F;
-    --button-text: #FFFFFF;
+    --button-text: #1B1B1B;
     --even: #F5EBD1;
     --odd: #FAF8F4;
 }
@@ -94,7 +94,7 @@ nav {
 nav a {
     padding: 10px;
     text-decoration: none;
-    color: var(--text);
+    color: var(--button-text);
     border-bottom: 1px solid var(--header);
 }
 
