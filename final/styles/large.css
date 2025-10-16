@@ -50,9 +50,25 @@
         }
 
     /*HOMEPAGE*/
-        .hero-image {
-            height: 80vh;
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+
+        .hero picture,
+        .hero .hero-text {
+            width: 50%;
+            margin: 10px;
+            background-color: transparent;
+        }
+
+    
+        .hero-image {
+            max-width: 100%;
+        }
+        
     
         .hero-title {
             font-size: 2.5rem;
@@ -60,6 +76,7 @@
     
         .hero-subtitle {
             font-size: 1.4rem;
+            color: var(--text);
         }
     
         .hero-buttons {
