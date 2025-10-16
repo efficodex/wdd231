@@ -272,6 +272,10 @@ main {
     height: 100%;
 }
 
+iframe {
+    border: none;
+}
+
 /*SETLIST*/
 /* ✅ GRID layout */
 .grid-setlist {
